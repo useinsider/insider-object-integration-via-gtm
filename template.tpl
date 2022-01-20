@@ -44,8 +44,8 @@ ___TEMPLATE_PARAMETERS___
         "displayValue": "Listing"
       },
       {
-        "value": "pageType",
-        "displayValue": "Page Type"
+        "value": "pageView",
+        "displayValue": "Page View"
       },
       {
         "value": "product",
@@ -58,6 +58,10 @@ ___TEMPLATE_PARAMETERS___
       {
         "value": "user",
         "displayValue": "User"
+      },
+      {
+        "value": "addApi",
+        "displayValue": "Add Insider API"
       }
     ],
     "simpleValueType": true
@@ -78,7 +82,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.currency"
   },
   {
     "type": "TEXT",
@@ -96,7 +101,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.total"
   },
   {
     "type": "TEXT",
@@ -114,7 +120,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.vouchers"
   },
   {
     "type": "TEXT",
@@ -132,7 +139,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.voucher_discount"
   },
   {
     "type": "TEXT",
@@ -150,7 +158,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.voucher_discount_ratio"
   },
   {
     "type": "TEXT",
@@ -168,7 +177,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.promotions"
   },
   {
     "type": "TEXT",
@@ -186,7 +196,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.promotion_discount"
   },
   {
     "type": "TEXT",
@@ -204,7 +215,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.promotion_discount_ratio"
   },
   {
     "type": "TEXT",
@@ -222,7 +234,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.shipping_cost"
   },
   {
     "type": "TEXT",
@@ -245,7 +258,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "basket.line_items"
   },
   {
     "type": "TEXT",
@@ -273,7 +287,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.id"
   },
   {
     "type": "TEXT",
@@ -301,7 +316,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.name"
   },
   {
     "type": "TEXT",
@@ -329,7 +345,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.taxonomy"
   },
   {
     "type": "TEXT",
@@ -357,7 +374,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.currency"
   },
   {
     "type": "TEXT",
@@ -385,7 +403,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.unit_price"
   },
   {
     "type": "TEXT",
@@ -413,7 +432,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.unit_sale_price"
   },
   {
     "type": "TEXT",
@@ -441,7 +461,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.url"
   },
   {
     "type": "TEXT",
@@ -469,7 +490,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.stock"
   },
   {
     "type": "TEXT",
@@ -497,7 +519,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.color"
   },
   {
     "type": "TEXT",
@@ -525,7 +548,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.size"
   },
   {
     "type": "TEXT",
@@ -553,7 +577,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.product_image_url"
   },
   {
     "type": "TEXT",
@@ -581,7 +606,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "product.custom"
   },
   {
     "type": "TEXT",
@@ -599,7 +625,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "quantity"
   },
   {
     "type": "TEXT",
@@ -617,7 +644,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "subtotal"
   },
   {
     "type": "TEXT",
@@ -630,7 +658,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "transaction.delivery"
   },
   {
     "type": "TEXT",
@@ -643,7 +672,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "transaction.bank_name"
   },
   {
     "type": "TEXT",
@@ -656,7 +686,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "transaction.payment_type"
   },
   {
     "type": "TEXT",
@@ -669,20 +700,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "transaction",
         "type": "EQUALS"
       }
-    ]
-  },
-  {
-    "type": "TEXT",
-    "name": "pageType",
-    "displayName": "Page Type",
-    "simpleValueType": true,
-    "enablingConditions": [
-      {
-        "paramName": "eventType",
-        "paramValue": "pageType",
-        "type": "EQUALS"
-      }
-    ]
+    ],
+    "defaultValue": "transaction.order_id"
   },
   {
     "type": "TEXT",
@@ -695,7 +714,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.uuid"
   },
   {
     "type": "TEXT",
@@ -708,7 +728,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.gender"
   },
   {
     "type": "TEXT",
@@ -721,7 +742,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.birthday"
   },
   {
     "type": "TEXT",
@@ -734,7 +756,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.has_transacted"
   },
   {
     "type": "TEXT",
@@ -747,7 +770,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.transaction_count"
   },
   {
     "type": "TEXT",
@@ -760,7 +784,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.gdpr_optin"
   },
   {
     "type": "TEXT",
@@ -773,7 +798,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.name"
   },
   {
     "type": "TEXT",
@@ -786,7 +812,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.surname"
   },
   {
     "type": "TEXT",
@@ -799,7 +826,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.username"
   },
   {
     "type": "TEXT",
@@ -812,7 +840,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.email"
   },
   {
     "type": "TEXT",
@@ -825,7 +854,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.email_optin"
   },
   {
     "type": "TEXT",
@@ -838,7 +868,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.phone_number"
   },
   {
     "type": "TEXT",
@@ -851,7 +882,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.sms_optin"
   },
   {
     "type": "TEXT",
@@ -864,7 +896,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.whatsapp_optin"
   },
   {
     "type": "TEXT",
@@ -877,7 +910,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.language"
   },
   {
     "type": "TEXT",
@@ -890,7 +924,8 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
-    ]
+    ],
+    "defaultValue": "user.returning"
   },
   {
     "type": "TEXT",
@@ -903,6 +938,81 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "user",
         "type": "EQUALS"
       }
+    ],
+    "defaultValue": "user.list_id"
+  },
+  {
+    "type": "SELECT",
+    "name": "pageType",
+    "displayName": "Page Type",
+    "macrosInSelect": false,
+    "selectItems": [
+      {
+        "value": "Home",
+        "displayValue": "Home"
+      },
+      {
+        "value": "Product",
+        "displayValue": "Product"
+      },
+      {
+        "value": "Category",
+        "displayValue": "Category"
+      },
+      {
+        "value": "Search",
+        "displayValue": "Search"
+      },
+      {
+        "value": "Basket",
+        "displayValue": "Basket"
+      },
+      {
+        "value": "Checkout",
+        "displayValue": "Checkout"
+      },
+      {
+        "value": "Confirmation",
+        "displayValue": "Confirmation"
+      },
+      {
+        "value": "Content",
+        "displayValue": "Content"
+      }
+    ],
+    "simpleValueType": true,
+    "enablingConditions": [
+      {
+        "paramName": "eventType",
+        "paramValue": "pageView",
+        "type": "EQUALS"
+      }
+    ]
+  },
+  {
+    "type": "TEXT",
+    "name": "partnerCode",
+    "displayName": "Partner Code",
+    "simpleValueType": true,
+    "enablingConditions": [
+      {
+        "paramName": "eventType",
+        "paramValue": "addApi",
+        "type": "EQUALS"
+      }
+    ]
+  },
+  {
+    "type": "TEXT",
+    "name": "partnerId",
+    "displayName": "Partner Id",
+    "simpleValueType": true,
+    "enablingConditions": [
+      {
+        "paramName": "eventType",
+        "paramValue": "addApi",
+        "type": "EQUALS"
+      }
     ]
   }
 ]
@@ -912,10 +1022,13 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const copyFromWindow = require('copyFromWindow');
 const setInWindow = require('setInWindow');
+const injectScript = require('injectScript');
+const queryPermission = require('queryPermission');
 
 const insiderObject = copyFromWindow('insider_object') || {};
 const dataLayer = copyFromWindow('dataLayer');
 const eventType = data.eventType;
+
 var getNestedData = function (parentData, dataFieldPath) {
     if (typeof dataFieldPath === 'string') {
         dataFieldPath = dataFieldPath.split('.');
@@ -1025,7 +1138,7 @@ if(eventType == 'basket') {
             custom: getNestedData(product,data.productCustomFields)
         });
     });
-} else if(eventType == 'pageType') {
+} else if(eventType == 'pageView') {
     insiderObject.page = {type: data.pageType};
 } else if(eventType == 'product') {
     insiderObject.product = {
@@ -1099,6 +1212,20 @@ if(eventType == 'basket') {
         returning: getDataFromDataLayer(data.isReturningUser),
         list_id: getDataFromDataLayer(data.contactListIds)
     };
+} else if(eventType == 'addApi') {
+    const url = 'https://' + data.partnerCode + '.api.useinsider.com/ins.js?id=' + data.partnerId;
+    
+    const onSuccess = () => {
+        data.gtmOnSuccess();
+    };
+      
+    const onFailure = () => {
+        data.gtmOnFailure();
+    };
+      
+    if (queryPermission('inject_script', url)) {
+        injectScript(url, onSuccess, onFailure, url);
+    }
 }
 
 setInWindow('insider_object', insiderObject, true);
@@ -1208,6 +1335,32 @@ ___WEB_PERMISSIONS___
       "isEditedByUser": true
     },
     "isRequired": true
+  },
+  {
+    "instance": {
+      "key": {
+        "publicId": "inject_script",
+        "versionId": "1"
+      },
+      "param": [
+        {
+          "key": "urls",
+          "value": {
+            "type": 2,
+            "listItem": [
+              {
+                "type": 1,
+                "string": "https://*.api.useinsider.com/*"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "clientAnnotations": {
+      "isEditedByUser": true
+    },
+    "isRequired": true
   }
 ]
 
@@ -1219,6 +1372,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 08.10.2021 12:36:35
+Created on 20.01.2022 15:51:50
 
 
