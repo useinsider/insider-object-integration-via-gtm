@@ -3,7 +3,4 @@ documentation: "https://developers.useinsider.com/docs"
 versions:
   # Latest versions
   - sha: accf5b49c1b4821d974b0e623de10b8eadfbc8a2
-    changeNotes: first realese of new template
-  # Older versions
-  - sha: 1829f628f357a39c32911c8c07b1b3f3f39e5daf
-    changeNotes: First release Insider Object Integration.
+    changeNotes: first realese of template

@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "Insider Object Integration",
+  "displayName": "Insider",
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
@@ -1039,7 +1039,7 @@ var getNestedData = function (parentData, dataFieldPath) {
             parentData = parentData[field];
         });
     }
-  
+
     return parentData;
 };
 
@@ -1085,7 +1085,7 @@ var getDataFromDataLayer = function (data) {
     return parentData;
 };
 
-if(eventType == 'basket') { 
+if(eventType == 'basket') {
     insiderObject.basket = {};
     insiderObject.basket.line_items = [];
     insiderObject.basket.currency = getData(data.basketCurrency);
@@ -1097,7 +1097,7 @@ if(eventType == 'basket') {
     insiderObject.basket.promotion_discount = getData(data.promotionDiscount);
     insiderObject.basket.promotion_discount_ratio = getData(data.promotionDiscountRatio);
     insiderObject.basket.shipping_cost = getData(data.shippingCost);
-    
+
     (getData(data.cartProducts) || []).forEach(function (product) {
         insiderObject.basket.line_items.push({
             product: {
@@ -1118,10 +1118,10 @@ if(eventType == 'basket') {
             subtotal: getNestedData(product, data.productSubtotal)
         });
     });
-} else if (eventType == 'listing') {    
+} else if (eventType == 'listing') {
     insiderObject.listing = {};
     insiderObject.listing.items = [];
-    
+
     (getData(data.cartProducts) || []).forEach(function (product) {
         insiderObject.listing.items.push({
             id: getNestedData(product,data.productId),
@@ -1214,15 +1214,15 @@ if(eventType == 'basket') {
     };
 } else if(eventType == 'addApi') {
     const url = 'https://' + data.partnerCode + '.api.useinsider.com/ins.js?id=' + data.partnerId;
-    
+
     const onSuccess = () => {
         data.gtmOnSuccess();
     };
-      
+
     const onFailure = () => {
         data.gtmOnFailure();
     };
-      
+
     if (queryPermission('inject_script', url)) {
         injectScript(url, onSuccess, onFailure, url);
     }
