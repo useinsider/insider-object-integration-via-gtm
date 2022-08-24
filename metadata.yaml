@@ -1,6 +1,0 @@
-homepage: "https://useinsider.com/"
-documentation: "https://developers.useinsider.com/docs"
-versions:
-  # Latest versions
-  - sha: ffdd990856465c36f29280956dce94d4ce290859
-    changeNotes: first realese of template
