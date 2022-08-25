@@ -1,6 +1,8 @@
 homepage: "https://useinsider.com/"
 documentation: "https://developers.useinsider.com/docs"
 versions:
+  - sha: 76878865816a204a7626bded762157cf53ec0087
+    changeNotes: Api values are added.
   - sha: 543920cd34bf36f432605bf3291bd0b6b8c1b4f3
     changeNotes: Default values are added.
   - sha: 1829f628f357a39c32911c8c07b1b3f3f39e5daf
