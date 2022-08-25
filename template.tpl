@@ -13,7 +13,7 @@ ___INFO___
 "id": "cvt_temp_public_id",
 "version": 1,
 "securityGroups": [],
-"displayName": "Insider Object Integration",
+"displayName": "Insider",
 "brand": {
 "id": "github.com_useinsider",
 "displayName": "useinsider",
@@ -58,6 +58,10 @@ ___TEMPLATE_PARAMETERS___
 {
 "value": "user",
 "displayValue": "User"
+},
+{
+"value": "addApi",
+"displayValue": "Add Insider API"
 }
 ],
 "simpleValueType": true
@@ -1018,6 +1022,8 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const copyFromWindow = require('copyFromWindow');
 const setInWindow = require('setInWindow');
+const injectScript = require('injectScript');
+const queryPermission = require('queryPermission');
 
 const insiderObject = copyFromWindow('insider_object') || {};
 const dataLayer = copyFromWindow('dataLayer');
@@ -1202,6 +1208,20 @@ language: getDataFromDataLayer(data.languageCode),
 returning: getDataFromDataLayer(data.isReturningUser),
 list_id: getDataFromDataLayer(data.contactListIds)
 };
+} else if(eventType == 'addApi') {
+const url = 'https://' + data.partnerCode + '.api.useinsider.com/ins.js?id=' + data.partnerId;
+
+const onSuccess = () => {
+data.gtmOnSuccess();
+};
+
+const onFailure = () => {
+data.gtmOnFailure();
+};
+
+if (queryPermission('inject_script', url)) {
+injectScript(url, onSuccess, onFailure, url);
+}
 }
 
 setInWindow('insider_object', insiderObject, true);
@@ -1311,6 +1331,32 @@ ___WEB_PERMISSIONS___
 "isEditedByUser": true
 },
 "isRequired": true
+},
+{
+"instance": {
+"key": {
+"publicId": "inject_script",
+"versionId": "1"
+},
+"param": [
+{
+"key": "urls",
+"value": {
+"type": 2,
+"listItem": [
+{
+"type": 1,
+"string": "https://*.api.useinsider.com/*"
+}
+]
+}
+}
+]
+},
+"clientAnnotations": {
+"isEditedByUser": true
+},
+"isRequired": true
 }
 ]
 
@@ -1323,4 +1369,5 @@ scenarios: []
 ___NOTES___
 
 Created on 20.01.2022 15:51:50
+
 
