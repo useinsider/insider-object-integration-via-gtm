@@ -1,6 +1,8 @@
 homepage: "https://useinsider.com/"
 documentation: "https://developers.useinsider.com/docs"
 versions:
+  - sha: 1c66d5c324b505dcd654f20efdc7ea26725895ec
+    changeNotes: Namings are updated.
   - sha: 76878865816a204a7626bded762157cf53ec0087
     changeNotes: Api values are added.
   - sha: 543920cd34bf36f432605bf3291bd0b6b8c1b4f3
