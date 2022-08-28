@@ -61,7 +61,7 @@ ___TEMPLATE_PARAMETERS___
 },
 {
 "value": "addApi",
-"displayValue": "Add Insider API"
+"displayValue": "Insider Tag"
 }
 ],
 "simpleValueType": true
@@ -1005,7 +1005,7 @@ ___TEMPLATE_PARAMETERS___
 {
 "type": "TEXT",
 "name": "partnerId",
-"displayName": "Partner Id",
+"displayName": "Partner Gachapon Id",
 "simpleValueType": true,
 "enablingConditions": [
 {
