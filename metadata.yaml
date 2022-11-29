@@ -1,6 +1,8 @@
 homepage: "https://useinsider.com/"
 documentation: "https://developers.useinsider.com/docs"
 versions:
+  - sha: 07559dc7dc48644a1217c4acff11a170fb3981d0
+    changeNotes: Change Texts on GTM.
   - sha: 1c66d5c324b505dcd654f20efdc7ea26725895ec
     changeNotes: Namings are updated.
   - sha: 76878865816a204a7626bded762157cf53ec0087
