@@ -992,7 +992,7 @@ ___TEMPLATE_PARAMETERS___
 {
 "type": "TEXT",
 "name": "partnerCode",
-"displayName": "Partner Code",
+"displayName": "Insider Account Name",
 "simpleValueType": true,
 "enablingConditions": [
 {
@@ -1005,7 +1005,7 @@ ___TEMPLATE_PARAMETERS___
 {
 "type": "TEXT",
 "name": "partnerId",
-"displayName": "Partner Gachapon Id",
+"displayName": "Insider Account Id",
 "simpleValueType": true,
 "enablingConditions": [
 {
